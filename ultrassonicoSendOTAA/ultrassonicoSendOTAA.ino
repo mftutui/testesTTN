@@ -29,14 +29,16 @@ void setup()
   debugSerial.begin(9600);
 
   // Wait a maximum of 10s for Serial Monitor
-  while (!debugSerial && millis() < 10000)
-    ;
+  while (!debugSerial && millis() < 10000);
 
   debugSerial.println("-- STATUS");
   ttn.showStatus();
 
   debugSerial.println("-- JOIN");
   ttn.join(appEui, appKey);
+
+  ttn.onMessage(mensagem);
+  
 }
 
 void loop()
@@ -68,3 +70,4 @@ void loop()
   
   delay(10000);
 }
+
