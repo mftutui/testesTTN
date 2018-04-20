@@ -1,4 +1,4 @@
-# THE THIGNS NETWORK - TESTES
+# THE THINGS NETWORK - TESTES
 
 Testes para utilização do dispositivo *The Things UNO* na plataforma *The Things Network*
 
